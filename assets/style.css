@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "FuturaLightBt";
+  src: url("fonts/FuturaLightBt.ttf");
+}
+
+body {
+  background-color: darkgrey;
+  color: #FFFFFF;
+  font-family: FuturaLightBt;
+  letter-spacing: 2px;
+}
+
+#outerBody {
+  width: 550px;
+  height: 800px;
+  margin: auto;
+  background-color: grey;
+  background-image: url("images/alt3bg.png");
+}
+
+p {
+  font-size: 40px;
+  color: #FFFFFF;
+  font-weight: 100;
+  margin-bottom: 50px;
+  padding-top: 35px;
+  text-align: center;
+}
+
+.colors {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+}
+
+.colorSquare {
+  margin-left: 80px;
+}
+
+.textColor {
+  margin-left: 7px;
+  font-size: 17px;
+}
+
+#logo {
+  transform: scale(.6);
+  text-align: center;
+  padding-top: 50px;
+}
+
+#black {
+  width: 65px;
+  height: 65px;
+  background: #070707;
+}
+
+#white {
+  width: 65px;
+  height: 65px;
+  background: #FFFFFF;
+}
+
+#orange {
+  width: 65px;
+  height: 65px;
+  background: #FF9900;
+}
+
+#BrightBlue {
+  width: 65px;
+  height: 65px;
+  background: #7390A4;
+}
+
+#DeepBlue {
+  width: 65px;
+  height: 65px;
+  background: #3E5361;
+}
+
+#DarkBlue {
+  width: 65px;
+  height: 65px;;
+  background: #131A1F;
+}
