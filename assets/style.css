@@ -48,6 +48,10 @@ p {
   padding-top: 50px;
 }
 
+#bottomText {
+  color: #FFFFFF;
+}
+
 #black {
   width: 65px;
   height: 65px;

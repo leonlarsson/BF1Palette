@@ -2,9 +2,34 @@
 <html>
 
 <head>
+
+  <!-- Primary Meta Tags -->
+  <title>BF1 Palette HTML</title>
+  <meta name="title" content="BF1 Palette HTML">
+  <meta name="description" content="BF1 Palette recreated in HTML+CSS">
+  <meta name="theme-color" content="#FF9900">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://leonlarsson.com/projects/bf1palette/">
+  <meta property="og:title" content="BF1 Palette HTML">
+  <meta property="og:description" content="BF1 Palette recreated in HTML+CSS">
+  <meta property="og:image" content="https://www.leonlarsson.com/projects/bf1palette/sampleimage.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://leonlarsson.com/projects/bf1palette/">
+  <meta property="twitter:title" content="BF1 Palette HTML">
+  <meta property="twitter:description" content="BF1 Palette recreated in HTML+CSS">
+  <meta property="twitter:image" content="https://www.leonlarsson.com/projects/bf1palette/sampleimage.jpg">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BF1 Palette</title>
   <link rel="stylesheet" href="assets/style.css">
+  <link rel="icon" href="/assets/icon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="/assets/icon.ico" type="image/x-icon" />
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript"></script>
+  <script src="//cdn.jsdelivr.net/jquery.color-animation/1/mainfile" type="text/javascript"></script>
+
 </head>
 
 <body>
@@ -81,8 +106,92 @@
     <div id="logo">
       <img src="assets/images/dicelogo.png">
     </div>
-    <a target="_blank" href="assets/images/BF1_Palette.jpg">This image</a> recreated entirely in HTML+CSS. Image = EA/DICE.
+    <div id="bottomText">
+      <a target="_blank" href="assets/images/BF1_Palette.jpg">This image</a> recreated entirely in HTML+CSS. Image = EA/DICE.
+    </div>
   </div>
+
+
+  <!-- Scripts that run the color changing on element click. -->
+  <script>
+    $("#black").click(function() {
+      // $("body").css({"background-color": "#070707"});
+      // $("#bottomText").css({"color": "#FFFFFF"});
+      $("body").animate({
+        backgroundColor: "#070707"
+      }, 400, "swing");
+      $("#bottomText").animate({
+        color: "#FFFFFF"
+      }, 400, "swing");
+    });
+
+    $("#white").click(function() {
+      // $("body").css({"background-color": "#FFFFFF"});
+      // $("#bottomText").css({"color": "#070707"});
+      $("body").animate({
+        backgroundColor: "#FFFFFF"
+      }, 400, "swing");
+      $("#bottomText").animate({
+        color: "#070707"
+      }, 400, "swing");
+    });
+
+    $("#orange").click(function() {
+      // $("body").css({"background-color": "#FF9900"});
+      // $("#bottomText").css({"color": "#FFFFFF"});
+      $("body").animate({
+        backgroundColor: "#FF9900"
+      }, 400, "swing");
+      $("#bottomText").animate({
+        color: "#FFFFFF"
+      }, 400, "swing");
+    });
+
+    $("#BrightBlue").click(function() {
+      // $("body").css({"background-color": "#7390A4"});
+      // $("#bottomText").css({"color": "#FFFFFF"});
+      $("body").animate({
+        backgroundColor: "#7390A4"
+      }, 400, "swing");
+      $("#bottomText").animate({
+        color: "#FFFFFF"
+      }, 400, "swing");
+    });
+
+    $("#DeepBlue").click(function() {
+      // $("body").css({"background-color": "#3E5361"});
+      // $("#bottomText").css({"color": "#FFFFFF"});
+      $("body").animate({
+        backgroundColor: "#3E5361"
+      }, 400, "swing");
+      $("#bottomText").animate({
+        color: "#FFFFFF"
+      }, 400, "swing");
+    });
+
+    $("#DarkBlue").click(function() {
+      // $("body").css({"background-color": "#131A1F"});
+      // $("#bottomText").css({"color": "#FFFFFF"});
+      $("body").animate({
+        backgroundColor: "#131A1F"
+      }, 400, "swing");
+      $("#bottomText").animate({
+        color: "#FFFFFF"
+      }, 400, "swing");
+    });
+
+    $("#logo").click(function() {
+      // $("body").css({"background-color": "darkgrey"});
+      // $("#bottomText").css({"color": "#FFFFFF"});
+      $("body").animate({
+        backgroundColor: "#A9A9A9"
+      }, 400, "swing");
+      $("#bottomText").animate({
+        color: "#FFFFFF"
+      }, 400, "swing");
+    });
+  </script>
+
 </body>
 
 </html>
